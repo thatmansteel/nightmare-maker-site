@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+h1, h2 {
+    font-family: 'Creepster', cursive;
+}
+
+video {
+    background: #000;
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.5);
+}
