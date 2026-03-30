@@ -1,81 +1,45 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nightmare Maker | London</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title>Nightmare Maker | London</title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2113.65">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Apple Chancery'; color: #000000; -webkit-text-stroke: #000000}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; color: #0000e3; -webkit-text-stroke: #0000e3}
+    p.p5 {margin: 0.0px 0.0px 12.0px 0.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000}
+    p.p7 {margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px 'Helvetica Neue'; color: #000000; color: rgba(0, 0, 0, 0.85); -webkit-text-stroke: rgba(0, 0, 0, 0.85)}
+    span.s1 {font-kerning: none}
+    span.s2 {font: 12.0px Times; font-kerning: none}
+    span.s3 {text-decoration: underline ; font-kerning: none}
+    span.s4 {font-kerning: none; color: #000000; -webkit-text-stroke: 0px #000000}
+    span.s5 {text-decoration: underline ; font-kerning: none; color: #0000e3; -webkit-text-stroke: 0px #0000e3}
+    span.s6 {font: 12.0px 'Apple Color Emoji'; font-kerning: none}
+    span.s7 {font-kerning: none; background-color: #a4a4a4}
+    span.s8 {font: 12.0px Times; font-kerning: none; color: #000000; -webkit-text-stroke: 0px #000000}
+  </style>
 </head>
-<body class="bg-zinc-950 text-zinc-200 font-sans">
-
-    <nav class="fixed top-0 w-full bg-zinc-950/90 backdrop-blur-md z-50 border-b border-zinc-800">
-        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="flex items-center gap-3">
-                <div class="w-8 h-8 bg-red-600 rounded-full flex items-center justify-center text-white font-bold text-xl">N</div>
-                <span class="text-2xl tracking-tighter font-bold" style="font-family: 'Creepster', cursive;">NIGHTMARE MAKER</span>
-            </div>
-            <div class="hidden md:flex items-center gap-8 text-sm uppercase tracking-widest">
-                <a href="#home" class="hover:text-red-500 transition-colors">Home</a>
-                <a href="#about" class="hover:text-red-500 transition-colors">About</a>
-                <a href="#gallery" class="hover:text-red-500 transition-colors">Gallery</a>
-                <a href="#showreel" class="hover:text-red-500 transition-colors">Showreel</a>
-                <a href="#contact" class="hover:text-red-500 transition-colors">Contact</a>
-            </div>
-        </div>
-    </nav>
-
-    <section id="home" class="min-h-screen flex items-center justify-center relative overflow-hidden">
-        <div class="max-w-4xl mx-auto px-6 text-center relative z-10 pt-20">
-            <h1 class="text-7xl md:text-8xl font-bold tracking-tighter mb-6" style="font-family: 'Creepster', cursive;">
-                ENTER THE NIGHTMARE
-            </h1>
-            <p class="text-xl md:text-2xl text-zinc-400 mb-10">London-based creator of dark art and digital horrors</p>
-            <a href="#showreel" class="inline-block bg-red-600 hover:bg-red-700 px-10 py-4 text-lg font-semibold tracking-wider transition-all hover:scale-105">
-                WATCH THE SHOWREEL
-            </a>
-        </div>
-    </section>
-
-    <section id="about" class="py-24 border-t border-zinc-800">
-        <div class="max-w-4xl mx-auto px-6">
-            <h2 class="text-5xl font-bold mb-12 text-center">Who Lurks in the Shadows</h2>
-            <p class="text-lg text-zinc-300">Replace this text with your own bio...</p>
-        </div>
-    </section>
-
-    <section id="gallery" class="py-24 bg-black">
-        <div class="max-w-6xl mx-auto px-6">
-            <h2 class="text-5xl font-bold mb-12 text-center">Gallery of Nightmares</h2>
-            <div id="gallery-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
-        </div>
-    </section>
-
-    <section id="showreel" class="py-24 border-t border-zinc-800 bg-black">
-        <div class="max-w-5xl mx-auto px-6">
-            <h2 class="text-5xl font-bold mb-12 text-center" style="font-family: 'Creepster', cursive;">THE SHOWREEL</h2>
-            <div class="max-w-4xl mx-auto">
-                <video id="showreel-video" class="w-full rounded-2xl border border-zinc-700" controls preload="metadata" poster="">
-                    <source src="assets/showreel.mp4" type="video/mp4">
-                    Your browser does not support video.
-                </video>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="py-24 border-t border-zinc-800">
-        <div class="max-w-2xl mx-auto px-6">
-            <h2 class="text-5xl font-bold mb-12 text-center">Contact</h2>
-            <form id="contact-form" class="space-y-6">
-                <input type="text" placeholder="Your Name" required class="w-full bg-zinc-900 border border-zinc-700 rounded-xl px-6 py-4">
-                <input type="email" placeholder="Your Email" required class="w-full bg-zinc-900 border border-zinc-700 rounded-xl px-6 py-4">
-                <textarea placeholder="Your message..." rows="6" class="w-full bg-zinc-900 border border-zinc-700 rounded-xl px-6 py-4"></textarea>
-                <button type="submit" class="w-full bg-red-600 hover:bg-red-700 py-5 text-lg font-semibold">SEND</button>
-            </form>
-        </div>
-    </section>
-
-    <script src="script.js"></script>
+<body>
+<p class="p1"><span class="s1">N</span></p>
+<p class="p2"><span class="s1">NIGHTMARE MAKER</span><span class="s2"><span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s3">Home</span><span class="s4"> </span><span class="s3">About</span><span class="s4"> </span><span class="s3">Gallery</span><span class="s4"> </span><span class="s3">Showreel</span><span class="s4"> </span><span class="s3">Contact</span><span class="s4"><span class="Apple-converted-space"> </span></span></p>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px 'Apple Chancery'; color: #000000; -webkit-text-stroke: #000000"><span class="s1">ENTER THE NIGHTMARE<span class="Apple-converted-space"> </span></span></h1>
+<p class="p5"><span class="s1">London-based creator of dark art and digital horrors</span></p>
+<p class="p3"><span class="s3">WATCH THE SHOWREEL<span class="Apple-converted-space"> </span></span></p>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>Who Lurks in the Shadows</b></span></h2>
+<p class="p5"><span class="s1">Replace this text with your own bio...</span></p>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>Gallery of Nightmares .</b></span></h2>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px 'Apple Chancery'; color: #000000; -webkit-text-stroke: #000000"><span class="s1">THE SHOWREEL</span></h2>
+<p class="p5"><span class="s1">Step into the nightmare. A curated reel of my darkest creations.</span></p>
+<p class="p1"><span class="s1">Your browser does not support the video tag. <a href="file:///Users/michaelsteel/Documents/nightmare-maker-site/assets/showreel.mp4"><span class="s5">Download the showreel</span></a><span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s6">🎥</span><span class="s1"> 1080p • Dark Horror Aesthetic</span></p>
+<p class="p1"><span class="s6">🔊</span><span class="s1"> Sound on for full immersion</span></p>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>Contact</b></span></h2>
+<p class="p7"><span class="s7">SEND</span><span class="s8"><span class="Apple-converted-space"> </span></span></p>
 </body>
 </html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nightmare Maker | London</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-zinc-950 text-zinc-200 font-sans">
+
+    <nav class="fixed top-0 w-full bg-zinc-950/90 backdrop-blur-md z-50 border-b border-zinc-800">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 bg-red-600 rounded-full flex items-center justify-center text-white font-bold text-xl">N</div>
+                <span class="text-2xl tracking-tighter font-bold" style="font-family: 'Creepster', cursive;">NIGHTMARE MAKER</span>
+            </div>
+            <div class="hidden md:flex items-center gap-8 text-sm uppercase tracking-widest">
+                <a href="#home" class="hover:text-red-500 transition-colors">Home</a>
+                <a href="#about" class="hover:text-red-500 transition-colors">About</a>
+                <a href="#gallery" class="hover:text-red-500 transition-colors">Gallery</a>
+                <a href="#showreel" class="hover:text-red-500 transition-colors">Showreel</a>
+                <a href="#contact" class="hover:text-red-500 transition-colors">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="min-h-screen flex items-center justify-center relative overflow-hidden">
+        <div class="max-w-4xl mx-auto px-6 text-center relative z-10 pt-20">
+            <h1 class="text-7xl md:text-8xl font-bold tracking-tighter mb-6" style="font-family: 'Creepster', cursive;">
+                ENTER THE NIGHTMARE
+            </h1>
+            <p class="text-xl md:text-2xl text-zinc-400 mb-10">London-based creator of dark art and digital horrors</p>
+            <a href="#showreel" class="inline-block bg-red-600 hover:bg-red-700 px-10 py-4 text-lg font-semibold tracking-wider transition-all hover:scale-105">
+                WATCH THE SHOWREEL
+            </a>
+        </div>
+    </section>
+
+    <section id="about" class="py-24 border-t border-zinc-800">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-5xl font-bold mb-12 text-center">Who Lurks in the Shadows</h2>
+            <p class="text-lg text-zinc-300">Replace this text with your own bio...</p>
+        </div>
+    </section>
+
+    <section id="gallery" class="py-24 bg-black">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-5xl font-bold mb-12 text-center">Gallery of Nightmares</h2>
+            <div id="gallery-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+        </div>
+    </section>
+
+    <!-- Showreel Section with your real video -->
+    <section id="showreel" class="py-24 border-t border-zinc-800 bg-black">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="text-5xl font-bold mb-12 text-center" style="font-family: 'Creepster', cursive;">THE SHOWREEL</h2>
+            <p class="text-center text-zinc-400 mb-10">Step into the nightmare. A curated reel of my darkest creations.</p>
+            
+            <div class="max-w-4xl mx-auto">
+                <video 
+                    id="showreel-video"
+                    class="w-full rounded-2xl border border-zinc-700 shadow-2xl"
+                    controls 
+                    preload="metadata"
+                    poster="assets/showreel-poster.jpg"
+                    playsinline>
+                    <source src="assets/showreel.mp4" type="video/mp4">
+                    Your browser does not support the video tag. 
+                    <a href="assets/showreel.mp4" download>Download the showreel</a>
+                </video>
+            </div>
+
+            <div class="text-center mt-8 text-xs text-zinc-500 flex justify-center gap-8">
+                <div>🎥 1080p • Dark Horror Aesthetic</div>
+                <div>🔊 Sound on for full immersion</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 border-t border-zinc-800">
+        <div class="max-w-2xl mx-auto px-6">
+            <h2 class="text-5xl font-bold mb-12 text-center">Contact</h2>
+            <form id="contact-form" class="space-y-6">
+                <input type="text" placeholder="Your Name" required class="w-full bg-zinc-900 border border-zinc-700 rounded-xl px-6 py-4">
+                <input type="email" placeholder="Your Email" required class="w-full bg-zinc-900 border border-zinc-700 rounded-xl px-6 py-4">
+                <textarea placeholder="Your message..." rows="6" class="w-full bg-zinc-900 border border-zinc-700 rounded-xl px-6 py-4"></textarea>
+                <button type="submit" class="w-full bg-red-600 hover:bg-red-700 py-5 text-lg font-semibold">SEND</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
